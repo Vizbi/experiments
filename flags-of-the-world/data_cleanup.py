@@ -32,7 +32,8 @@ def get_colors_from_flag(filename):
     colors_in_flag = Image.open(filename).convert("RGB").getcolors()
     try:
         name = filename.split('/')[-1].split('.')[0]
-        color_list = [(count, color_tuple, name, get_colour_name(websafe(color_tuple)))
+        color_list = [(count, color_tuple[0], color_tuple[1], color_tuple[2],
+                       name, get_colour_name(websafe(color_tuple)))
                       for count, color_tuple in colors_in_flag]
         return color_list
     except:
@@ -45,8 +46,8 @@ def convert_flags_to_values_in_dir(dir):
             z.extend(get_colors_from_flag(dir  + filename))
         except:
             pass
-    df = DataFrame(z, columns=['Number of Pixels', 'RBG', 'Country', 'Color'])
-    f = open('test.csv', 'w')
+    df = DataFrame(z, columns=['Number of Pixels', 'Red', 'Green', 'Blue', 'Country', 'Color'])
+    f = open('data.csv', 'w')
     f.write(df.to_csv())
     f.close()
     return df
