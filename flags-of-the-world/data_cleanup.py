@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-
+import os
 from PIL import Image
 import webcolors
+from pandas import DataFrame
 
 # Pre-calc the wbesafe lookup table
 tbl = tuple(51*((int(i)+25)//51) for i in range(256))
@@ -29,5 +30,23 @@ def websafe(color_tuple):
 
 def get_colors_from_flag(filename):
     colors_in_flag = Image.open(filename).convert("RGB").getcolors()
-    return [(count, color_tuple, get_colour_name(websafe(color_tuple))) for count, color_tuple in colors_in_flag
-    ]
+    try:
+        name = filename.split('/')[-1].split('.')[0]
+        color_list = [(count, color_tuple, name, get_colour_name(websafe(color_tuple)))
+                      for count, color_tuple in colors_in_flag]
+        return color_list
+    except:
+        pass
+
+def convert_flags_to_values_in_dir(dir):
+    z = []
+    for filename in os.listdir(dir):
+        try:
+            z.extend(get_colors_from_flag(dir  + filename))
+        except:
+            pass
+    df = DataFrame(z, columns=['Number of Pixels', 'RBG', 'Country', 'Color'])
+    f = open('test.csv', 'w')
+    f.write(df.to_csv())
+    f.close()
+    return df
