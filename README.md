@@ -57,3 +57,6 @@ Alexa published a list of [top one million websites](http://s3.amazonaws.com/ale
 The letter frequency of english is well known.
 For example, [this wikipedia](https://en.wikipedia.org/wiki/Letter_frequency) article
 tells us that the letter `e` is most common. We compare the domain letter frequency with english letter frequency.
+
+We also compare the [bigram frequency in english langauge] with bigram frequency
+ in domain names.
