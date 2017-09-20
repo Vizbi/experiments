@@ -8,39 +8,50 @@
 ```
 * What colors are the most prominent in flags?
 ```
-    Color
-    aqua       1
-    yellow     2
-    lime       4
-    blue       6
-    purple    14
-    black     21
-    maroon    24
-    olive     28
-    green     29
-    navy      29
-    teal      42
-    gray      50
-    orange    51
-    silver    62
-    white     75
-    red       80
-    Name: Country, dtype: int64
+Color
+red       80
+white     75
+silver    45
+orange    45
+gray      32
+teal      29
+navy      28
+green     28
+black     21
+olive     18
+maroon    12
+purple    10
+lime       4
+blue       3
+yellow     2
+Name: Country, dtype: int64
+
+
 ```
 * What country has most colors in its flag?
 ```
-                      Country  Color
-105                   Comoros     10
-106                    Guyana     10
-107  Central African Republic     10
+Country                 Color
+Guyana                      9
+Jordan                      8
+Central African Republic    8
+
 
 ```
 * What country has least colors in its flag?
 ```
-  Country  Color
-0  Poland      2
-1  Monaco      2
-2  Latvia      2
+Country                                   Color
+Poland                                        2
+Bangladesh                                    2
+Qatar                                         2
+Japan                                         2
+Palau                                         2
+China                                         2
+Monaco                                        2
+Mauritania                                    2
+Somalia                                       2
+Latvia                                        2
+Albania                                       2
+
 ```
 
 Raw images are from [flagipedia](http://flagpedia.net/download). The images were parsed with Pillow.

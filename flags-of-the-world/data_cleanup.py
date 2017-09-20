@@ -49,7 +49,8 @@ def convert_flags_to_values_in_dir(dir):
         except:
             pass
     df = DataFrame(z, columns=['Number of Pixels', 'Red', 'Green', 'Blue', 'RGB', 'Country', 'Color'])
-    f = open('data-usa.csv', 'w')
+    df = df[df['Number of Pixels'] > 50]
+    f = open('data.csv', 'w')
     f.write(df.to_csv())
     f.close()
     return df
