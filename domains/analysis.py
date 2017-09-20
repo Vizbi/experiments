@@ -1,5 +1,7 @@
 from pandas import DataFrame
 
+from .eng_freq_data import eng_freq_df
+
 df = DataFrame.from_csv('data/top-1m.csv')
 
 super_list = []
@@ -33,5 +35,6 @@ df_1['last_percent'] = df_1['last_count']/df_1['last_count'].sum()*100
 df_2 = DataFrame(super_list, columns=['letters'])
 df_2.reset_index(inplace=True)
 df_2 = df_2.groupby('letters').count()
+df_2.columns = ['count']
 df_2['percentage'] = (df_2/df_2.sum())*100
-df_2.reset_index(inplace=True)
+df_2['eng_freq'] = eng_freq_df
