@@ -119,10 +119,10 @@ s    9.0259%              6.327%
 s    14.3566%             6.327%
 ```
 
-###Bar graph for Monogram
+### Bar graph for Monogram
 ![English VS Domain Names Letter](https://github.com/Vizbi/experiments/blob/master/domains/monogram_analytics.png "English VS Domain Names Letter Frequency")
 
-###Bar graph for Bigram
+### Bar graph for Bigram
 ![English VS Domain Names Bigram](https://github.com/Vizbi/experiments/blob/master/domains/bigram_analytics.png "English VS Domain Names Bigram")
 
 The letter frequency of english is well known.
