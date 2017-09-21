@@ -118,7 +118,12 @@ s    9.0259%              6.327%
        Domain   English Language
 s    14.3566%             6.327%
 ```
-![English VS Domain Names Letter Frequency](https://github.com/Vizbi/experiments/blob/master/domains/analytics.png "English VS Domain Names Letter Frequency")
+
+###Bar graph for Monogram
+![English VS Domain Names Letter](https://github.com/Vizbi/experiments/blob/master/domains/monogram_analytics.png "English VS Domain Names Letter Frequency")
+
+###Bar graph for Bigram
+![English VS Domain Names Bigram](https://github.com/Vizbi/experiments/blob/master/domains/bigram_analytics.png "English VS Domain Names Bigram")
 
 The letter frequency of english is well known.
 For example, [this wikipedia](https://en.wikipedia.org/wiki/Letter_frequency) article
