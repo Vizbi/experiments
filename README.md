@@ -118,7 +118,7 @@ s    9.0259%              6.327%
        Domain   English Language
 s    14.3566%             6.327%
 ```
-[[https://github.com/Vizbi/experiments/blob/master/domains/analytics.png|alt=Letters Frequency (English Language vs Domain Names)]]
+[[https://github.com/Vizbi/experiments/blob/master/domains/analytics.png]]
 
 The letter frequency of english is well known.
 For example, [this wikipedia](https://en.wikipedia.org/wiki/Letter_frequency) article
