@@ -125,6 +125,21 @@ s    14.3566%             6.327%
 ### Bar graph for Bigram
 ![English VS Domain Names Bigram](https://github.com/Vizbi/experiments/blob/master/domains/bigram_analytics.png "English VS Domain Names Bigram")
 
+### Bar graph for Most common letter in English vs Domain Name
+![Most common letter in English vs Domain Name](https://github.com/Vizbi/experiments/blob/master/domains/most_common_letter_eng_vs_domain.png "Most common letter in English vs Domain Name")
+
+### Bar graph for Most common letter in Domain Name vs English
+![Most common letter in Domain Name vs English](https://github.com/Vizbi/experiments/blob/master/domains/most_common_letter_domain_vs_eng.png "Most common letter in Domain Name vs English")
+
+### Bar graph for Most common letter in English vs Domain Name
+![Most common letter in English vs Domain Name](https://github.com/Vizbi/experiments/blob/master/domains/most_common_bigram_eng_vs_domain.png "Most common letter in English vs Domain Name")
+
+### Bar graph for Most common letter in Domain Name vs English
+![Most common letter in Domain Name vs English](https://github.com/Vizbi/experiments/blob/master/domains/most_common_bigram_domain_vs_eng.png "Most common letter in Domain Name vs English")
+
+
+
+
 The letter frequency of english is well known.
 For example, [this wikipedia](https://en.wikipedia.org/wiki/Letter_frequency) article
 tells us that the letter `e` is most common. We compare the domain letter frequency with english letter frequency.
