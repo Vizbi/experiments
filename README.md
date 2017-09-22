@@ -54,6 +54,9 @@ Albania                                       2
 
 ```
 
+### Bar graph for Most Prominent Colors in Country's flag
+![Most Prominent Colors in Country's flag](https://github.com/Vizbi/experiments/blob/master/flags-of-the-world/most_prominent_colors_in_flags.png "Most Prominent Colors in Country's flag")
+
 Raw images are from [flagipedia](http://flagpedia.net/download). The images were parsed with Pillow.
 
 
